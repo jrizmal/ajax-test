@@ -1,0 +1,43 @@
+<head>
+    {%load static%}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/stylesheet.css' %}">
+    <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+        crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <h1>Vsi zapiski</h1>
+    <div id="zapiskiDiv">
+
+        <!--vsi zapiski-->
+
+    </div>
+    <div class="form">
+        <form method="POST" id="nov_zapisek_form">
+            {% csrf_token %} naslov:
+            <input type="text" id="input_naslov"><br> besedilo:
+            <input type="text" id="input_besedilo"><br>
+            <input type="submit" value="Shrani">
+        </form>
+
+        <input id="btn_dobiZapiske" value="Osveži" type="submit"><br/>
+        <p>Iskanje
+            <input type="text" id="iskanje"><br/>
+            <ul id="zadetki">
+
+            </ul>
+        </p>
+    </div>
+    <br/>
+    <div id="podrobnosti">
+
+        <!--podrobnosti ko kliknes zapisek med rezultati-->
+
+    </div>
+    <ul class='custom-menu'>
+        <li data-action="delete">Izbriši</li>
+    </ul>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>

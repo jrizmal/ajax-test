@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.zapisek{
+    padding: 30px;
+    margin: 5px;
+    float: left;
+    background-color: #F44236;
+    color: white;
+    
+}
+.form{
+    clear: left;
+    padding: 30px;
+    margin: 5px;
+    background-color: #76348B;
+    color: white;
+
+}
+.zapisek h3{
+    margin: 0;
+}
+#zadetki{
+    padding: 30px;
+    margin: 5px;
+    float: left;
+    background-color: #FEC107;
+    color: white;
+
+}
+#zadetki li a{
+    color: white;
+}
+#podrobnosti{
+    
+    padding: 30px;
+    margin: 5px;
+    float: left;
+    background-color: #363F46;
+    color: white;
+
+}
+.custom-menu {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid #CCC;
+    white-space: nowrap;
+    font-family: sans-serif;
+    background: #FFF;
+    color: #333;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+.custom-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.custom-menu li:hover {
+    background-color: #DEF;
+}
